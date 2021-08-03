@@ -1,38 +1,292 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --main-background: #162129;
+    --sidebar: rgba(13, 21, 26, 0.78);
+    --yellow:#eacf65;
+    --green-font: #a3fab4;
+    --red: #ce9178;
   }
+  
+
+
+body {
+    font-family:  'Source Code Pro', monospace !important;
+    color:#fff !important;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+    font-family:  'Source Code Pro', monospace !important;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #E4DFE4;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    background-color: var(--main-background);
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    /* margin-right:2em; */
+    background-color: var(--sidebar);
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+.sidebar-subheading{
+    color: var(--red);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background:#0e1111;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: var(--green-font);
+}
+
+#sidebar ul li a:hover {
+    color: #0971b2;
+    transition: color .4s ease-out;
+    text-decoration: none;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+.website-title {
+    color:var(--yellow);
+}
+
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+.jumbotron {
+    color: white;
+    /* background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c"); */
+    /* background-image: url("https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width:200vh;
+  }
+
+
+  .tinted {
+    background: linear-gradient( rgb(220, 53, 62), rgb(135, 250, 180, 0.90) ), url("images/home-code.jpg");
+  }
+
+
+
+  .text-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .jumbotron-subheading{
+      font-size:1.4em;
   }
+
+  @media(max-width:750px) {
+    .home-title {
+        font-size: 2.5rem !important;
+    } 
+  }
+
+
+
+
+  /********* PORTFOLIO *************/
+
+  .card{
+      margin-bottom:35px;
+  }
+
+
+  .card-container {
+    position: relative;
+
+  }
+
+  .card-body {
+      padding: 0 !important;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .card-container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    color:#162129;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .card .card-body.text h5 {
+    font-weight:800 !important;
+    text-transform: uppercase;
+    margin-top:30px;
+  }
+
+  .card-button {
+    position: absolute;
+    left: 50%;
+    top:65%;
+    border:var(--green-font) solid 2px;
+    background:transparent;
+    color:#162129;
+    padding:5px 10px 5px 10px;
+  }
+
+
+  .card-button a {
+    color:#162129;
+    font-size:16pt;
+  }
+
+  .card-container div.card div.card-body.overlay.text p.language-text {
+    color: var(--red);
+    font-size:18px;
 }

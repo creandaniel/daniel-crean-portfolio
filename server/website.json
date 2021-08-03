@@ -1,0 +1,37 @@
+[
+{
+  "id": "Home",
+  "title": "A PHP Full-stack Developer with  7+ years of experience.",
+  "opening": "I currently work in full time employment at Tekpaw; an digital marketing agency as a full-stack developer. I specialise in maintaining and creating websites weather on front-end or back-end solution. I work with variety of clients in the same company via different language markets. I have been developing websites since 2012.",
+  "outside_work": "By night, when in downtime, I mainly enjoy playing video games, esp Nintendo/RPG games  Other interests include outdoors, amateur  photography and working out.",
+  "closing": "Browse some of my work, view my skills, or get in touch."
+},
+{
+  "id": "About",
+  "title": "A PHP Full-stack Developer with  7+ years of experience.",
+  "opening": "I currently work in full time employment at Tekpaw; an digital marketing agency as a full-stack developer. I specialise in maintaining and creating websites weather on front-end or back-end solution. I work with variety of clients in the same company via different language markets. I have been developing websites since 2012.",
+  "outside_work": "By night, when in downtime, I mainly enjoy playing video games, esp Nintendo/RPG games  Other interests include outdoors, amateur  photography and working out.",
+  "closing": "Browse some of my work, view my skills, or get in touch."
+},
+{
+  "id": "Skills",
+  "title": "No Skills",
+  "opening": "I estimate, plan, design , build, optimise and launch for any client-side solution weather its 1 person or a team. All of my full time and freelance work is maintained, developed and have even launched multiple projects from scratch. ",
+  "outside_work": "I problem solve and discuss requirements with clients in a human readable way possible via communication. ",
+  "closing": "Here is a selection of relevant technologies and tools I work with to implement website delivery. "
+},  
+{
+  "id": "Projects",
+  "title": "See all my work below. Unless explicitly stated, all of my work is completely done by me.",
+  "opening": "My work is is combination of live projects and also GitHub work I have done in my spare time. ",
+  "outside_work": "",
+  "closing": ""
+},
+{
+  "id": "Contact",
+  "title": "Contact Me",
+  "opening": "Don't be shy!",
+  "outside_work": "For any enquiries, use the contact form below, or email me at:",
+  "closing": "Not taking any freelance work at present. Please do not send me spam."
+}
+]

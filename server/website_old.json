@@ -1,0 +1,64 @@
+{
+  "project": "Daniel Web Portfiio Content",
+  "version": 1.1,
+  "releaseDate": "2020-08-18T00:00:00.000Z",
+  "person": {
+    "id": 1,
+    "name": "Daniel Crean",
+    "email": "creandaniel@hotmail.com",
+    "github": "www.github.com/creandaniel"
+  },
+  "Home": {
+    "links": {
+      "api_path": "/api/home",
+      "base": "/"
+    },
+    "content": {
+      "title": "Daniel Crean",
+      "subheading": "PHP Full-stack Website Developer"
+    }
+  },
+  "Projects": {
+    "content": {
+      "title": "A list of projects here",
+      "text": "text goes here"
+    },
+    "links": {
+      "api_path": "/api/projects",
+      "base": "/projects"
+    }
+  },
+  "About": {
+    "content": {
+      "title": "A PHP Full-stack Developer with  7+ years of experience.",
+      "opening": "I currently work in full time employment at Tekpaw; an digital marketing agency as a full-stack developer. I specialise in maintaining and creating websites weather on front-end or back-end solution. I work with variety of clients in the same company via different language markets. I have been developing websites since 2012.",
+      "outside_work": "By night, when in downtime, I mainly enjoy playing video games, esp Nintendo/RPG games  Other interests include outdoors, amateur  photography and working out.",
+      "closing": "Browse some of my work, view my skills, or get in touch."
+    },
+    "links": {
+      "api_path": "/api/about",
+      "base": "/about"
+    }
+  },
+  "Skills": {
+    "content": {
+      "title": "A PHP Full-stack Developer with  7+ years of experience.",
+      "opening": "I currently work in full time employment at Tekpaw; an digital marketing agency as a full-stack developer. I specialise in maintaining and creating websites weather on front-end or back-end solution. I work with variety of clients in the same company via different language markets. I have been developing websites since 2012.",
+      "outside_work": "By night, when in downtime, I mainly enjoy playing video games, esp Nintendo/RPG games  Other interests include outdoors, amateur  photography and working out.",
+      "closing": "Browse some of my work, view my skills, or get in touch."
+    },
+    "links": {
+      "api_path": "/api/about",
+      "base": "/about"
+    }
+  },
+  "Contact": {
+    "content": {},
+    "title": "Don't be shy!",
+    "text": "For any enquiries, use the contact form below, or email me at: creandaniel@hotmail.com",
+    "links": {
+      "api_path": "/api/contact",
+      "base": "/contact"
+    }
+  }
+}
