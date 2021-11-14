@@ -23,16 +23,28 @@ class Sidebar extends Component {
               <ul className="list-unstyled components">
                   <p className="sidebar-subheading">Full Stack PHP Developer</p>
                   <li>
-                      <a href="/">.Home()</a>
+                  <NavLink exact to="/"  activeStyle={{
+                    fontWeight: "bold",
+                    color: "#32E3C2"
+                }}>.Home()</NavLink>
                   </li>
                   <li>
-                      <a href="/about" title="Learn more about me and my skillset">.About()</a>
+                  <NavLink to="/about"  activeStyle={{
+                    fontWeight: "bold",
+                    color: "#32E3C2"
+                }}>.About()</NavLink>
                   </li>
                   <li>
-                      <a href="/portfolio" title="My projects of what I have coded">.Portfolio()</a>
+                  <NavLink to="/portfolio"  activeStyle={{
+                    fontWeight: "bold",
+                    color: "#32E3C2"
+                }}>.Portfolio()</NavLink>
                   </li>
                   <li>
-                      <a href="/contact" title="Talk to me">.Contact()</a>
+                  <NavLink to="/contact"  activeStyle={{
+                    fontWeight: "bold",
+                    color: "#32E3C2"
+                }}>.Contact()</NavLink>
                   </li>
               </ul>
           </nav>

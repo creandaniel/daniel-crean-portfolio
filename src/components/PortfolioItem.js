@@ -4,7 +4,7 @@ import { Button,Modal} from 'react-bootstrap';
 import Popup from './Popup';
 
 
-class Portfolio extends Component {
+class PortfolioItem extends Component {
     constructor(props) {
         super(props);
         this.state = { 
@@ -19,7 +19,7 @@ class Portfolio extends Component {
    
    
     componentDidMount() {
-        fetch(`http://127.0.0.1:5000/api/github`)
+        fetch(`http://127.0.0.1:5000/api/github`+`${slug}`)
         
           .then(res => res.json())
           .then(json => {
@@ -30,24 +30,13 @@ class Portfolio extends Component {
           })
       }
 
-      togglePopup(item) {
-        this.setState({activeItem:item}, ()=> this.setState({ showPopup: !this.state.showPopup }));
-      }
-
-
-      addDefaultSrc(ev){
-        ev.target.src = 'https://i.ytimg.com/vi/R0gVMx2vFd0/maxresdefault.jpg'
-      }
-
-
-
       render() {
 
         return (
     <div id="content" className="container-fluid">
 
 
-            <h2>Portfolio</h2>
+            <h2>Portfolio Item</h2>
 
       <p>See a few examples of the projects I've worked on over the past few years. </p>
         
@@ -109,5 +98,5 @@ class Portfolio extends Component {
       }
     }
     { /*https://www.nomisoft.co.uk/portfolio// http://findmatthew.com/ */ }
-export default Portfolio;
+export default PortfolioItem;
 

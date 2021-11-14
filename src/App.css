@@ -3,25 +3,32 @@
 :root {
     --main-background: #162129;
     --sidebar: rgba(13, 21, 26, 0.78);
-    --yellow:#eacf65;
-    --green-font: #a3fab4;
-    --red: #ce9178;
+    --green-font: #fff;
   }
   
+  @media (min-width: 1200px) {
+    .wrapper.container{
+        max-width: 1300px;
+
+    }
+}
 
 
 body {
     font-family:  'Source Code Pro', monospace !important;
     color:#fff !important;
-    
+    background-color: #242635 !important;
+}
+h1,h2,h3,h4,h5 {
+    color:#32E3C2;
 }
 
 p {
     font-family:  'Source Code Pro', monospace !important;
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-weight: 300;
-    line-height: 1.7em;
-    color: #E4DFE4;
+    /* line-height: 1.em; */
+    color: #fff;
 }
 
 a,
@@ -30,6 +37,11 @@ a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
+}
+
+a:active {
+    color:#32E3C2;
+    font-weight:800;
 }
 
 .navbar {
@@ -61,7 +73,7 @@ a:focus {
 .wrapper {
     display: flex;
     width: 100%;
-    background-color: var(--main-background);
+    /* background-color: var(--main-background); */
     align-items: stretch;
 }
 
@@ -69,7 +81,7 @@ a:focus {
     min-width: 250px;
     max-width: 250px;
     /* margin-right:2em; */
-    background-color: var(--sidebar);
+    /* background-color: var(--sidebar); */
     transition: all 0.3s;
 }
 
@@ -77,12 +89,16 @@ a:focus {
     margin-left: -250px;
 }
 .sidebar-subheading{
-    color: var(--red);
+    color: var(--green-font);
+    border-left: #32E3C2 solid 1px;
+    font-size:1.2em;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background:#0e1111;
+    /* padding: 20px; */
+    /* background:#0e1111; */
+    margin-top:1em;
+    margin-left:0.5em;
 }
 
 #sidebar ul.components {
@@ -96,9 +112,10 @@ a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1.0em;
     display: block;
     color: var(--green-font);
+    font-weight:500;
 }
 
 #sidebar ul li a:hover {
@@ -155,8 +172,9 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 .website-title {
-    color:var(--yellow);
+    color:var(--green-font);
 }
+
 
 
 #content {
@@ -164,6 +182,8 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+
+    
 }
 
 /* ---------------------------------------------------
@@ -222,9 +242,17 @@ a.article:hover {
 
   /********* PORTFOLIO *************/
 
+ nav#sidebar ul.list-unstyled.components li {
+     margin-bottom:10px;
+ }
+
   .card{
       margin-bottom:35px;
+      min-height:180px;
+      height:80px;
   }
+
+
 
 
   .card-container {
@@ -287,6 +315,6 @@ a.article:hover {
   }
 
   .card-container div.card div.card-body.overlay.text p.language-text {
-    color: var(--red);
+    color: var(--green-font);
     font-size:18px;
 }
